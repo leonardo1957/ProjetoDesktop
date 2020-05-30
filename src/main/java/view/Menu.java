@@ -71,8 +71,8 @@ public class Menu extends JFrame {
 	 */
 	public Menu(Usuario usuario) {
 		usuarioTela = usuario;
-		setTitle("NOAH PHARMACY");
-		setIconImage(Toolkit.getDefaultToolkit().getImage(Menu.class.getResource("/icons/logo.png")));
+		setTitle(" ");
+		setIconImage(Toolkit.getDefaultToolkit().getImage(Menu.class.getResource("/icons/FARMACIA.png")));
 		initialize();
 	}
 
@@ -86,7 +86,7 @@ public class Menu extends JFrame {
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.getContentPane().setLayout(new MigLayout("", "[grow][]", "[grow][]"));
 
-		ImageIcon icon = new ImageIcon(this.getClass().getResource("/icons/pharmacy_Sketch.png"));
+		ImageIcon icon = new ImageIcon(this.getClass().getResource("/icons/FARMACIA.png"));
 		Image img = icon.getImage();
 
 		desktopPane = new JDesktopPane() {
@@ -123,7 +123,7 @@ public class Menu extends JFrame {
 				}
 
 				desktopPane.add(cadastroMedicamento);
-				// desktopPane.getDesktopManager().maximizeFrame(cadastroMedicamento);
+				 desktopPane.getDesktopManager().maximizeFrame(cadastroMedicamento);
 				cadastroMedicamento.show();
 
 				cadastroMedicamento.addInternalFrameListener(new InternalFrameAdapter() {
@@ -146,7 +146,7 @@ public class Menu extends JFrame {
 				if (!temComponenteNaTela(pesquisaMedicamento)) {
 					pesquisaMedicamento = new ListagemMedicamento();
 					desktopPane.add(pesquisaMedicamento);
-					// desktopPane.getDesktopManager().maximizeFrame(pesquisaMedicamento);
+					desktopPane.getDesktopManager().maximizeFrame(pesquisaMedicamento);
 					pesquisaMedicamento.show();
 
 					pesquisaMedicamento.addInternalFrameListener(new InternalFrameAdapter() {
@@ -181,7 +181,7 @@ public class Menu extends JFrame {
 				if (!temComponenteNaTela(pesquisaMedicamento)) {
 					cadastroProduto = new CadastroProduto(null);
 					desktopPane.add(cadastroProduto);
-					// desktopPane.getDesktopManager().maximizeFrame(pesquisaMedicamento);
+					 desktopPane.getDesktopManager().maximizeFrame(pesquisaMedicamento);
 					cadastroProduto.show();
 
 					cadastroProduto.addInternalFrameListener(new InternalFrameAdapter() {
@@ -205,7 +205,7 @@ public class Menu extends JFrame {
 				if (!temComponenteNaTela(pesquisaProduto)) {
 					pesquisaProduto = new ListagemProduto();
 					desktopPane.add(pesquisaProduto);
-					// desktopPane.getDesktopManager().maximizeFrame(pesquisaMedicamento);
+					 desktopPane.getDesktopManager().maximizeFrame(pesquisaMedicamento);
 					pesquisaProduto.show();
 
 					pesquisaProduto.addInternalFrameListener(new InternalFrameAdapter() {
@@ -256,7 +256,7 @@ public class Menu extends JFrame {
 				if (!temComponenteNaTela(telaVenda)) {
 					telaVenda = new TelaVenda(usuarioTela);
 					desktopPane.add(telaVenda);
-					// desktopPane.getDesktopManager().maximizeFrame(telaVenda);
+					 desktopPane.getDesktopManager().maximizeFrame(telaVenda);
 					telaVenda.show();
 
 					telaVenda.addInternalFrameListener(new InternalFrameAdapter() {
@@ -281,7 +281,7 @@ public class Menu extends JFrame {
 				if (!temComponenteNaTela(listagemVenda)) {
 					listagemVenda = new ListagemVenda();
 					desktopPane.add(listagemVenda);
-					// desktopPane.getDesktopManager().maximizeFrame(telaVenda);
+					 desktopPane.getDesktopManager().maximizeFrame(telaVenda);
 					listagemVenda.show();
 
 					listagemVenda.addInternalFrameListener(new InternalFrameAdapter() {
@@ -305,7 +305,7 @@ public class Menu extends JFrame {
 				if (!temComponenteNaTela(telaSobre)) {
 					telaSobre = new TelaSobre();
 					desktopPane.add(telaSobre);
-					// desktopPane.getDesktopManager().maximizeFrame(pesquisaMedicamento);
+					 desktopPane.getDesktopManager().maximizeFrame(pesquisaMedicamento);
 					telaSobre.show();
 
 					telaSobre.addInternalFrameListener(new InternalFrameAdapter() {
@@ -340,7 +340,7 @@ public class Menu extends JFrame {
 				if (!temComponenteNaTela(cadastroUsuario)) {
 					cadastroUsuario = new CadastroUsuario();
 					desktopPane.add(cadastroUsuario);
-					// desktopPane.getDesktopManager().maximizeFrame(telaVenda);
+					 desktopPane.getDesktopManager().maximizeFrame(telaVenda);
 					cadastroUsuario.show();
 
 					cadastroUsuario.addInternalFrameListener(new InternalFrameAdapter() {
@@ -365,7 +365,7 @@ public class Menu extends JFrame {
 				if (!temComponenteNaTela(pesquisaUsuario)) {
 					pesquisaUsuario = new ListagemUsuario();
 					desktopPane.add(pesquisaUsuario);
-					// desktopPane.getDesktopManager().maximizeFrame(telaVenda);
+					 desktopPane.getDesktopManager().maximizeFrame(telaVenda);
 					pesquisaUsuario.show();
 
 					pesquisaUsuario.addInternalFrameListener(new InternalFrameAdapter() {
