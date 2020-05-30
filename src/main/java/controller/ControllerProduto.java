@@ -24,6 +24,9 @@ public class ControllerProduto {
 				int opcao = JOptionPane.showConfirmDialog(null,
 						"Produto j� cadastrado, deseja fazer altera��o com os dados inseridos?", "",
 						JOptionPane.OK_CANCEL_OPTION);
+			
+				
+				
 				// UPDATE
 				if (opcao == 0) {
 					if (produtoBO.atualizar(produto) == "") {
@@ -85,5 +88,8 @@ public class ControllerProduto {
 		return produtoBO.consultarCategoria();
 	}
 
+	public void gerarRelatorio(List<Produto> produtos, String caminhoEscolhido, String tipoRelatorioXls) {
+		produtoBO.gerarPlanilha(produtos, caminhoEscolhido);
+	}
 
 }

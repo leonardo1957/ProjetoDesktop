@@ -34,7 +34,10 @@ public class ControllerVenda {
 		return vendaBO.listarVendas(seletor);
 	}
 
-	
+	public void gerarRelatorio(List<Venda> vendasConsultadas, String caminhoEscolhido, String tipoRelatorioXls) {
+		vendaBO.gerarPlanilha(vendasConsultadas, caminhoEscolhido);
+
+	}
 
 	public List<FormaPagamento> consultarFormaPagamento() {
 		return vendaBO.consultarFormaPagamento();

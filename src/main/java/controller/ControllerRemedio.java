@@ -56,6 +56,8 @@ public class ControllerRemedio {
 		if (remedio == null) {
 			validacao = "Rem�dio esta vazio";
 		} else {
+		
+			
 			// valida��es de campo vazio e nulo
 			if (remedio.getCodBarra().trim().equals("")) {
 				validacao = "Remedio deve possuir um c�digo de barras.";
@@ -107,6 +109,8 @@ public class ControllerRemedio {
 		return remedioBO.atualizar(remedioSelecionado);
 	}
 
-
+	public void gerarRelatorio(List<Remedio> remedios, String caminhoEscolhido, String tipoRelatorio) {
+		remedioBO.gerarPlanilha(remedios, caminhoEscolhido);
+	}
 
 }

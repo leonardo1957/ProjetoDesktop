@@ -58,8 +58,11 @@ public class VendaBO {
 		return vendaDAO.listarVenda(seletor);
 	}
 
+	public void gerarPlanilha(List<Venda> vendasConsultadas, String caminhoEscolhido) {
+		GeradorDePlanilha gerador = new GeradorDePlanilha();
+		gerador.gerarPlanilhaVenda(vendasConsultadas, caminhoEscolhido);
 
-
+	}
 
 	public ArrayList<FormaPagamento> consultarFormaPagamento() {
 		return vendaDAO.consultarFormaPagamento();
