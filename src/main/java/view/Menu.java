@@ -397,6 +397,8 @@ public class Menu extends JFrame {
 			}
 		}
 	}
+	
+	// ajustar os abaixo
 
 	public boolean temComponenteNaTela(Object frame) {
 		ArrayList<Component> componentes = new ArrayList<Component>(Arrays.asList(desktopPane.getComponents()));

@@ -130,6 +130,9 @@ public class TelaVenda extends JInternalFrame {
 			}
 		});
 
+		
+		
+		
 		txtCodBar.setDocument(new JTextFieldLimit(13));
 		getContentPane().add(txtCodBar, "flowx,cell 0 1,growx");
 		txtCodBar.setColumns(10);
