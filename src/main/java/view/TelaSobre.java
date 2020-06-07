@@ -48,7 +48,7 @@ public class TelaSobre extends JInternalFrame {
 		setBackground(Color.WHITE);
 		setFrameIcon(new ImageIcon(TelaSobre.class.getResource("/icons/network.png")));
 		setBorder(new LineBorder(Color.LIGHT_GRAY, 3));
-		setBounds(500, 100, 340, 250);
+		setBounds(500, 100, 1282, 496);
 		getContentPane().setLayout(new MigLayout("", "[grow,fill]", "[][][][][][][]"));
 
 		JLabel lblDesenvolvedores = new JLabel("Desenvolvedores e seus cargos (fiquem em casa nesse momento dificil):");

@@ -55,6 +55,7 @@ public class CadastroProduto extends JInternalFrame {
 		});
 	}
 
+	
 	/**
 	 * Create the frame.
 	 */
@@ -82,6 +83,8 @@ public class CadastroProduto extends JInternalFrame {
 		lblAlteraoGeraSoma.setFont(new Font("Tahoma", Font.PLAIN, 9));
 		getContentPane().add(lblAlteraoGeraSoma, "cell 2 3");
 
+		
+		
 		// Pre�o
 
 		txtPrecoVenda = new JNumberFormatField(2);
@@ -89,6 +92,8 @@ public class CadastroProduto extends JInternalFrame {
 		getContentPane().add(txtPrecoVenda, "flowx,cell 0 6,alignx left");
 		txtPrecoVenda.setColumns(10);
 
+		
+		
 		// Nome
 
 		txtNome = new JTextField();
@@ -98,6 +103,8 @@ public class CadastroProduto extends JInternalFrame {
 		getContentPane().add(txtNome, "cell 0 1,growx");
 		txtNome.setColumns(10);
 
+	
+		
 		// C�digo de barras
 
 		txtCodBar = new JTextField();
@@ -121,6 +128,8 @@ public class CadastroProduto extends JInternalFrame {
 		JLabel lblEstoque = new JLabel("Estoque:");
 		getContentPane().add(lblEstoque, "cell 2 2");
 
+	
+		
 		// Categoria
 
 		consultarCategoria();
@@ -185,11 +194,13 @@ public class CadastroProduto extends JInternalFrame {
 					}
 					JOptionPane.showMessageDialog(null, mensagem);
 				} catch (ArrayIndexOutOfBoundsException e) {
-					JOptionPane.showMessageDialog(null, "Verificar se todas as caixas foram preenchidas");
+					JOptionPane.showMessageDialog(null, "Verificar se todas os campos foram preenchidos");
 				}
 			}
 		});
 
+		
+		
 		getContentPane().add(btnSalvar, "cell 2 6,alignx right");
 
 		JLabel lblPreco = new JLabel("Pre\u00E7o:");

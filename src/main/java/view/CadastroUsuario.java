@@ -75,7 +75,9 @@ public class CadastroUsuario extends JInternalFrame {
 		JLabel lblSenha = new JLabel("Senha:");
 		getContentPane().add(lblSenha, "cell 0 4,alignx left");
 
-		JLabel lblNivel = new JLabel("Nível:");
+		JLabel lblNivel = new JLabel("Nível:");  //decidir os niveis -- Adm - visualizador - cadastro
+		
+		
 		getContentPane().add(lblNivel, "cell 2 4,alignx left");
 
 		txtSenha = new JPasswordField();
@@ -103,7 +105,7 @@ public class CadastroUsuario extends JInternalFrame {
 					Usuario usuario = new Usuario();
 					usuario.setNome(txtNome.getText());
 					usuario.setLogin(txtLogin.getText());
-					usuario.setSenha(txtSenha.getText());
+					usuario.setSenha(txtSenha.getText());  //senha em *
 					if (cmbNivel.getSelectedIndex() > -1) {
 						Nivel nivel = new Nivel();
 						nivel.setId(listaNiveis.get(cmbNivel.getSelectedIndex()).getId());

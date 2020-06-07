@@ -172,9 +172,16 @@ public class CadastroMedicamento extends JInternalFrame {
 		cmbFormaUso.setSelectedIndex(-1);
 		getContentPane().add(cmbFormaUso, "flowx,cell 0 11,growx");
 
+		
+		
+		
+		
 		JLabel labelEspaco2 = new JLabel("    ");
 		getContentPane().add(labelEspaco2, "cell 0 11");
 
+		
+		
+		
 		txtEstoque = new JTextField();
 		txtEstoque.addKeyListener(new KeyAdapter() {
 			@Override
@@ -188,13 +195,16 @@ public class CadastroMedicamento extends JInternalFrame {
 		getContentPane().add(txtEstoque, "cell 0 11,growx");
 		txtEstoque.setColumns(10);
 
-		JLabel lblEstoque = new JLabel("    Estoque:");
+		JLabel lblEstoque = new JLabel("  Qtd Estoque:");
 		getContentPane().add(lblEstoque, "cell 0 10,alignx right");
 
 		chckbxGenerico = new JCheckBox("Gen\u00E9rico");
 		chckbxGenerico.setBackground(Color.WHITE);
 		getContentPane().add(chckbxGenerico, "cell 0 11");
 
+		
+		
+		
 		JButton btnSalvar = new JButton("Salvar");
 		btnSalvar.setIcon(new ImageIcon(CadastroMedicamento.class.getResource("/icons/check.png")));
 		btnSalvar.setBackground(Color.WHITE);
@@ -249,7 +259,7 @@ public class CadastroMedicamento extends JInternalFrame {
 					}
 					JOptionPane.showMessageDialog(null, mensagem);
 				} catch (ArrayIndexOutOfBoundsException e) {
-					JOptionPane.showMessageDialog(null, "Verificar se todas as caixas foram preenchidas");
+					JOptionPane.showMessageDialog(null, "Verificar se todas os campos foram preenchidos");
 				}
 			}
 		});
@@ -273,6 +283,9 @@ public class CadastroMedicamento extends JInternalFrame {
 		JLabel lblPreco = new JLabel("Preço:                          ");
 		getContentPane().add(lblPreco, "cell 0 4");
 
+		//começa o if aqui
+		
+		
 		if (remedioSelecionado != null) {
 			this.remedio = remedioSelecionado;
 			this.preencherCampos();
@@ -280,6 +293,8 @@ public class CadastroMedicamento extends JInternalFrame {
 			this.setTitle("Alterar Medicamento");
 		}
 	}
+	
+	//ajustar daqui pra baixo (Lucas)
 
 	private void bloquearCamposEdicao() {
 		this.txtCodBar.setEnabled(false);
@@ -317,7 +332,7 @@ public class CadastroMedicamento extends JInternalFrame {
 		txtPrecoCusto.setText(format.format(remedio.getPrecoCusto()) + "");
 		txtComposicao.setText(remedio.getComposicao());
 
-		// Usando calculo Lambda ;)
+		// Usando calculo Lambda do stackoverflow (Kalleo)
 		Optional<Laboratorio> laboratorioSelecionado = listaLaboratorios.stream()
 				.filter(lab -> lab.getIdLaboratorio() == remedio.getLaboratorio().getIdLaboratorio()).findFirst();
 

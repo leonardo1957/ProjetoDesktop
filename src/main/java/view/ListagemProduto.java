@@ -37,6 +37,8 @@ public class ListagemProduto extends JInternalFrame {
 	/**
 	 * 
 	 */
+	
+	
 	private static final long serialVersionUID = 4465473469800344264L;
 
 	CadastroProduto cadastroProduto = null;

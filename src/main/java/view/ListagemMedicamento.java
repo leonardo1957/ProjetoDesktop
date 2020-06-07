@@ -415,6 +415,8 @@ public class ListagemMedicamento extends JInternalFrame {
 
 			SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
+			
+			//verificar se esta funcionando na base
 			String[] novaLinha = new String[] { remedio.getCodBarra() + "", remedio.getDosagem(),
 					remedio.getComposicao(), generico, remedio.getNome(), sdf.format(remedio.getDataCadastro()),
 					"R$" + format.format(remedio.getPrecoVenda()), "R$" + format.format(remedio.getPrecoCusto()),
