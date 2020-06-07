@@ -56,7 +56,7 @@ public class TelaSobre extends JInternalFrame {
 		lblDesenvolvedores.setFont(new Font("Tahoma", Font.BOLD, 35));
 		getContentPane().add(lblDesenvolvedores, "cell 0 0,alignx center");
 
-		JLabel lblLeo = new JLabel("Leonardo Vieira - Qualirede Dev - ESTAGIARIO FUDIDO QUE SÓ TRABALHA ");
+		JLabel lblLeo = new JLabel("Leonardo Vieira - Qualirede Dev ");
 		lblLeo.setFont(new Font("Tahoma", Font.BOLD, 22));
 		lblLeo.setHorizontalAlignment(SwingConstants.CENTER);
 		getContentPane().add(lblLeo, "cell 0 1,alignx center");
