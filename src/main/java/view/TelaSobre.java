@@ -56,30 +56,26 @@ public class TelaSobre extends JInternalFrame {
 		lblDesenvolvedores.setFont(new Font("Tahoma", Font.BOLD, 35));
 		getContentPane().add(lblDesenvolvedores, "cell 0 0,alignx center");
 
-		JLabel lblLorenzo = new JLabel("Leonardo Vieira - Qualirede Dev");
-		lblLorenzo.setFont(new Font("Tahoma", Font.BOLD, 22));
-		lblLorenzo.setHorizontalAlignment(SwingConstants.CENTER);
-		getContentPane().add(lblLorenzo, "cell 0 1,alignx center");
+		JLabel lblLeo = new JLabel("Leonardo Vieira - Qualirede Dev - ESTAGIARIO FUDIDO QUE SÓ TRABALHA ");
+		lblLeo.setFont(new Font("Tahoma", Font.BOLD, 22));
+		lblLeo.setHorizontalAlignment(SwingConstants.CENTER);
+		getContentPane().add(lblLeo, "cell 0 1,alignx center");
 
-		JLabel lblMatheus = new JLabel("Kalleo Agostinho ");
-		lblMatheus.setFont(new Font("Tahoma", Font.BOLD, 22));
-		lblMatheus.setHorizontalAlignment(SwingConstants.CENTER);
-		getContentPane().add(lblMatheus, "cell 0 2,alignx center");
+		JLabel lblKalleo = new JLabel("Kalleo Agostinho ");
+		lblKalleo.setFont(new Font("Tahoma", Font.BOLD, 22));
+		lblKalleo.setHorizontalAlignment(SwingConstants.CENTER);
+		getContentPane().add(lblKalleo, "cell 0 2,alignx center");
 
-		JLabel lblVitor = new JLabel("Lucas Hermann - Orsegups Analista");
-		lblVitor.setFont(new Font("Tahoma", Font.BOLD, 22));
-		lblVitor.setHorizontalAlignment(SwingConstants.CENTER);
-		getContentPane().add(lblVitor, "cell 0 3,alignx center");
+		JLabel lblLucas = new JLabel("Lucas Hermann - Orsegups Analista");
+		lblLucas.setFont(new Font("Tahoma", Font.BOLD, 22));
+		lblLucas.setHorizontalAlignment(SwingConstants.CENTER);
+		getContentPane().add(lblLucas, "cell 0 3,alignx center");
 
-		JLabel lblContato = new JLabel("Ajuda:");
-		lblContato.setFont(new Font("Tahoma", Font.BOLD, 14));
-		lblContato.setHorizontalAlignment(SwingConstants.LEFT);
-		getContentPane().add(lblContato, "flowx,cell 0 5,alignx left");
-
+		
 		JLabel lblV = new JLabel("V.1.0 - Desenvolvimento Desktop 2020");
 		getContentPane().add(lblV, "flowx,cell 0 6");
 
-		JLabel label = new JLabel("\u00A9 2019");
+		JLabel label = new JLabel("\u00A9 2020");
 		label.setHorizontalAlignment(SwingConstants.RIGHT);
 		getContentPane().add(label, "cell 0 6");
 
