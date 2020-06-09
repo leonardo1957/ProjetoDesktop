@@ -51,7 +51,7 @@ public class TelaSobre extends JInternalFrame {
 		setBounds(500, 100, 1282, 496);
 		getContentPane().setLayout(new MigLayout("", "[grow,fill]", "[][][][][][][]"));
 
-		JLabel lblDesenvolvedores = new JLabel("Desenvolvedores e seus cargos (fiquem em casa nesse momento dificil):");
+		JLabel lblDesenvolvedores = new JLabel("Desenvolvedores e seus cargos (fiquem em casa):");
 		lblDesenvolvedores.setHorizontalAlignment(SwingConstants.CENTER);
 		lblDesenvolvedores.setFont(new Font("Tahoma", Font.BOLD, 35));
 		getContentPane().add(lblDesenvolvedores, "cell 0 0,alignx center");
