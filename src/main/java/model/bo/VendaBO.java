@@ -32,7 +32,7 @@ public class VendaBO {
 		if (vendaDAO.inserirVenda(valorTotal, formaPgto, usuario)) {
 			novaVenda = vendaDAO.pegarUltimaVenda();
 		} else {
-			mensagem = "N�o foi possivel criar a venda (VendaBO30)";
+			mensagem = "N�o foi possivel criar a venda";
 		}
 
 		if (novaVenda != null) {

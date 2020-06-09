@@ -47,7 +47,7 @@ public class RemedioBO {
 		if (remedioDAO.excluir(remedioSelecionado)) {
 			mensagem = "Remédio excluído com sucesso.";
 		} else {
-			mensagem = "Erro: Remédios que já foram vendidos não podem ser excluídos!";
+			mensagem = "Erro: Remédios já vendido";
 		}
 		return mensagem;
 	}

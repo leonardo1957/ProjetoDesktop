@@ -13,7 +13,7 @@ public class UsuarioBO {
 	UsuarioDAO usuarioDAO = new UsuarioDAO();
 
 	public String salvarUsuario(Usuario usuario) {
-		String mensagem = "";
+		String mensagem = " ";
 		mensagem = usuarioDAO.salvarUsuario(usuario);
 
 		return mensagem;

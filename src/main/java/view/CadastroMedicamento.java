@@ -120,7 +120,7 @@ public class CadastroMedicamento extends JInternalFrame {
 		JLabel lblDosagem = new JLabel("Dosagem:");
 		getContentPane().add(lblDosagem, "flowx,cell 0 4");
 
-		JLabel lblPreoDeCusto = new JLabel("Preço de custo:");
+		JLabel lblPreoDeCusto = new JLabel("Preço:");
 		getContentPane().add(lblPreoDeCusto, "cell 2 4");
 
 		txtDosagem = new JTextField();
@@ -159,7 +159,7 @@ public class CadastroMedicamento extends JInternalFrame {
 
 		consultarFormaUso();
 
-		JLabel lblEspaco4 = new JLabel(" ");
+		JLabel lblEspaco4 = new JLabel("  ");
 		lblEspaco4.setForeground(Color.RED);
 		getContentPane().add(lblEspaco4, "cell 2 9");
 
@@ -283,7 +283,7 @@ public class CadastroMedicamento extends JInternalFrame {
 		JLabel lblPreco = new JLabel("Preço:                          ");
 		getContentPane().add(lblPreco, "cell 0 4");
 
-		//começa o if aqui
+		//condição
 		
 		
 		if (remedioSelecionado != null) {

@@ -43,7 +43,7 @@ public class ProdutoBO {
 		if (produtoDAO.excluir(produtoSelecionado)) {
 			mensagem = "Produto excluído com sucesso.";
 		} else {
-			mensagem = "Erro: Produtos que já foram vendidos não podem ser excluídos!";
+			mensagem = "Erro: Produto já vendido";
 		}
 		return mensagem;
 	}

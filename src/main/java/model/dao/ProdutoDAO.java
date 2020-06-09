@@ -88,7 +88,7 @@ public class ProdutoDAO {
 				estoque = resultado.getInt("ESTOQUE");
 			}
 		} catch (SQLException e) {
-			System.out.println("Erro ao executar a Query de Consulta de Prato. Causa:" + e.getMessage());
+			System.out.println("Erro ao executar a Query de Consulta. Causa:" + e.getMessage());
 		} finally {
 			Banco.closeResultSet(resultado);
 			Banco.closeStatement(stmt);
@@ -246,7 +246,7 @@ public class ProdutoDAO {
 				listaCategorias.add(c);
 			}
 		} catch (SQLException e) {
-			System.out.println("Erro ao listar os Categorias!!");
+			System.out.println("Erro ao listar os Categorias");
 			e.printStackTrace();
 		} finally {
 			Banco.closeResultSet(resultado);
