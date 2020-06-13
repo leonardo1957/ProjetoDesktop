@@ -14,7 +14,7 @@ public class Banco {
 	private static final String BANCODADOS = "farmacia_db";
 	private static final String CONEXAO = "jdbc:mysql://127.0.0.1:3306/" + BANCODADOS
 			+ "?useTimezone=true&serverTimezone=UTC&useSSL=false";
-	private static final String USER = "root";
+	private static final String USER = "root@localhost";
 	private static final String PASSWORD = "admin";
 
 	public static final int CODIGO_RETORNO_ERRO_EXCLUSAO = 0;
