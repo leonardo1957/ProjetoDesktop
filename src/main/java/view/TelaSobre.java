@@ -68,11 +68,11 @@ public class TelaSobre extends JInternalFrame {
 		lblKalleo.setHorizontalAlignment(SwingConstants.CENTER);
 		getContentPane().add(lblKalleo, "cell 0 2,alignx center");
 
-		JLabel lblLucas = new JLabel("Lucas Hermann - Orsegups Analista");
+		JLabel lblLucas = new JLabel("Lucas Hermann - Orsegups - Manutenção TI");
 		lblLucas.setFont(new Font("Tahoma", Font.BOLD, 22));
 		lblLucas.setHorizontalAlignment(SwingConstants.CENTER);
 		getContentPane().add(lblLucas, "cell 0 3,alignx center");
-
+		
 		
 		JLabel lblV = new JLabel("V.1.0 - Desenvolvimento Desktop 2020");
 		getContentPane().add(lblV, "flowx,cell 0 6");
