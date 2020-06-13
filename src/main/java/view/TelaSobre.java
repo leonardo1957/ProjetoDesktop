@@ -61,6 +61,7 @@ public class TelaSobre extends JInternalFrame {
 		lblLeo.setFont(new Font("Tahoma", Font.BOLD, 22));
 		lblLeo.setHorizontalAlignment(SwingConstants.CENTER);
 		getContentPane().add(lblLeo, "cell 0 1,alignx center");
+		
 
 		JLabel lblKalleo = new JLabel("Kalleo Agostinho ");
 		lblKalleo.setFont(new Font("Tahoma", Font.BOLD, 22));
