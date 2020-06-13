@@ -9,7 +9,7 @@ Desenvolvedores:
 Leonardo Vieira - Dev junior java - Qualirede
 
 
-Lucas Hermann - Analista -  Orseups 
+Lucas Hermann - Analista -  Orsegups 
 
 
 
