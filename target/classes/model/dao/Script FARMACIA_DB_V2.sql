@@ -265,10 +265,10 @@ INSERT INTO `farmacia_db`.`remedio` (`COD_BARRA`,`DOSAGEM`,`COMPOSICAO`,`GENERIC
 VALUES( 310012340130, '200mg','Panadol', 0, 'Paracetamol', NOW(), 29.90, 16.75, 19, 1, 2);
 
 INSERT INTO `farmacia_db`.`endereco`(`CEP`,`RUA`,`NUMERO`,`COMPLEMENTO`,`BAIRRO`,`CIDADE`,`UF`)
-VALUES('88130090','Servidão Augusto Haeming',68,'Próximo a praça de palhoça','Centro','Palhoça','SC');
+VALUES('88045543','Servidão clodomiro vicente da silva',80,'teste','Saco dos limoes','Florianopolis','SC');
 
 INSERT INTO `farmacia_db`.`cliente` (`CPF`,`NOME`,`DT_NASC`,`DT_CADASTRO`,`ID_ENDERECO`)
-VALUES ('07185434912','Vitor Fabre de Souza','1997-12-29',NOW(),1);
+VALUES ('12674947942','Leonardo Vieira','2000-11-20',NOW(),1);
 
 INSERT INTO `farmacia_db`.`nivel`(`DESCRICAO`)
 VALUES('ADMIN');
@@ -281,7 +281,7 @@ INSERT INTO `farmacia_db`.`usuario`(`NOME`,`DT_CADASTRO`,`LOGIN`,`SENHA`,`ID_NIV
 VALUES('Administrador',NOW(),'admin','1234',1);
 
 INSERT INTO `farmacia_db`.`usuario`(`NOME`,`DT_CADASTRO`,`LOGIN`,`SENHA`,`ID_NIVEL`)
-VALUES('Jorge',NOW(),'jorge','1234',2);
+VALUES('teste',NOW(),'teste','teste',2);
 
 INSERT INTO `farmacia_db`.`forma_pgto`(`DESCRICAO`)
 VALUES('Débito');
