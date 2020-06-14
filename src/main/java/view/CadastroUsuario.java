@@ -75,7 +75,7 @@ public class CadastroUsuario extends JInternalFrame {
 		JLabel lblSenha = new JLabel("Senha:");
 		getContentPane().add(lblSenha, "cell 0 4,alignx left");
 
-		JLabel lblNivel = new JLabel("Nível:");  //decidir os niveis -- Adm - visualizador - cadastro
+		JLabel lblNivel = new JLabel("Nível:");  //decidir os niveis
 		
 		
 		getContentPane().add(lblNivel, "cell 2 4,alignx left");
