@@ -86,7 +86,7 @@ public class Menu extends JFrame {
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.getContentPane().setLayout(new MigLayout("", "[grow][]", "[grow][]"));
 
-		ImageIcon icon = new ImageIcon(this.getClass().getResource("/icons/FARMACIA.png"));
+		ImageIcon icon = new ImageIcon(this.getClass().getResource("/icons/icon2.jpg"));
 		Image img = icon.getImage();
 
 		desktopPane = new JDesktopPane() {
