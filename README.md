@@ -17,6 +17,6 @@ Kalleo Agostinho - Aluno Quinta fase ADS
 
 
 
-Projeto criado para a disciplica de Desenvolvimento Desktop, Senac 2020 
+Projeto criado para a disciplina de Desenvolvimento Desktop, Senac 2020 
 
 
