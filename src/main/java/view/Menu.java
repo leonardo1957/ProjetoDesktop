@@ -305,7 +305,7 @@ public class Menu extends JFrame {
 				if (!temComponenteNaTela(telaSobre)) {
 					telaSobre = new TelaSobre();
 					desktopPane.add(telaSobre);
-					desktopPane.getDesktopManager().maximizeFrame(pesquisaMedicamento);
+				//	desktopPane.getDesktopManager().maximizeFrame(pesquisaMedicamento);
 					telaSobre.show();
 
 					telaSobre.addInternalFrameListener(new InternalFrameAdapter() {
@@ -384,6 +384,7 @@ public class Menu extends JFrame {
 		menu.setEnabled(false);
 		menuBar.add(menu);
 
+		//arrumar
 		menuBar.add(mnSobre);
 
 		if (usuarioTela != null) {
