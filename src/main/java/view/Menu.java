@@ -72,7 +72,7 @@ public class Menu extends JFrame {
 	public Menu(Usuario usuario) {
 		usuarioTela = usuario;
 		setTitle(" ");
-		setIconImage(Toolkit.getDefaultToolkit().getImage(Menu.class.getResource("/icons/FARMACIA.png")));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(Menu.class.getResource("/icons/icon_covid.jpg")));
 		initialize();
 	}
 
