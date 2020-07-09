@@ -6,6 +6,8 @@ import javax.swing.text.PlainDocument;
 
 class JStringFormatField extends PlainDocument {
 
+	//Padroes de interface grafica
+
 	private String mask;
 
 	public JStringFormatField(String mask) {
