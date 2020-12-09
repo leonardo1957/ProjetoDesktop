@@ -21,6 +21,8 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.border.LineBorder;
+import javax.swing.event.InternalFrameAdapter;
+import javax.swing.plaf.basic.BasicInternalFrameUI.InternalFrameLayout;
 
 import controller.ControllerProduto;
 import model.vo.Categoria;
@@ -47,7 +49,7 @@ public class CadastroProduto extends JInternalFrame {
 			public void run() {
 				try {
 					CadastroProduto frame = new CadastroProduto(null);
-					frame.setVisible(true);
+					frame.setVisible(true);											
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -65,9 +67,11 @@ public class CadastroProduto extends JInternalFrame {
 		getContentPane().setBackground(Color.WHITE);
 		setTitle("Cadastro de produto");
 		setClosable(true);
-		setBounds(100, 100, 380, 195);
+		setBounds(100, 100, 590, 318);
 		getContentPane().setLayout(new MigLayout("", "[grow][][]", "[][][][][][][]"));
-
+		
+		
+		
 		JLabel lblNome = new JLabel("Nome:");
 		getContentPane().add(lblNome, "cell 0 0");
 

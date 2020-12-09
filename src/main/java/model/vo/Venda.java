@@ -1,6 +1,7 @@
 package model.vo;
 
 import java.sql.Date;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
 public class Venda {
@@ -9,9 +10,10 @@ public class Venda {
 	private Double valor;
 	private ArrayList<ItemRemedio> itensRemedios;
 	private ArrayList<ItemProduto> itensProdutos;
-	private Date dataVenda;
+	private Date dataVenda ;
 	private FormaPagamento formaPagamento;
 	private Usuario usuario;
+	
 
 	public int getIdVenda() {
 		return idVenda;

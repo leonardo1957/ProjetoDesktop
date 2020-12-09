@@ -246,7 +246,7 @@ public class VendaDAO {
 			primeiro = false;
 		}
 
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+		SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
 		if ((seletor.getDataMenor() != null) && (seletor.getDataMaior() != null)) {
 			if (!primeiro) {
 				sql += " AND ";

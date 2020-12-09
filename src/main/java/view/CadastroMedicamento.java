@@ -69,18 +69,19 @@ public class CadastroMedicamento extends JInternalFrame {
 	}
 
 	/**
-	 * Create the frame. INSERT
+	 * Create the frame. INSERT 
 	 */
 	@SuppressWarnings({ "unchecked", "rawtypes" })
+	
 	public CadastroMedicamento(Remedio remedioSelecionado) {
+		setBorder(new LineBorder(new Color(192, 192, 192), 3));
 		setFrameIcon(new ImageIcon(CadastroMedicamento.class.getResource("/icons/med3x.png")));
 		getContentPane().setBackground(Color.WHITE);
-		setBorder(new LineBorder(Color.LIGHT_GRAY, 3));
 		setTitle("Cadastro de medicamentos");
 		setClosable(true);
-
-		setBounds(100, 100, 420, 315);
-		getContentPane().setLayout(new MigLayout("", "[][][grow]", "[10px:n][][][][][][][][][][][][]"));
+		setBounds(100, 100, 694, 321);
+		getContentPane().setLayout(new MigLayout("", "[100px][][grow]", "[][][][][][][][][][][10px:n][][10px:n][][][grow][]"));
+		
 
 		JLabel lblNome = new JLabel("Nome:");
 		getContentPane().add(lblNome, "cell 0 1");
@@ -120,7 +121,7 @@ public class CadastroMedicamento extends JInternalFrame {
 		JLabel lblDosagem = new JLabel("Dosagem:");
 		getContentPane().add(lblDosagem, "flowx,cell 0 4");
 
-		JLabel lblPreoDeCusto = new JLabel("Preço:");
+		JLabel lblPreoDeCusto = new JLabel("Preço Custo:");
 		getContentPane().add(lblPreoDeCusto, "cell 2 4");
 
 		txtDosagem = new JTextField();
@@ -280,7 +281,7 @@ public class CadastroMedicamento extends JInternalFrame {
 		JLabel lblNewLabel_1 = new JLabel("");
 		getContentPane().add(lblNewLabel_1, "cell 0 4,growx");
 
-		JLabel lblPreco = new JLabel("Preço:                          ");
+		JLabel lblPreco = new JLabel("Preço Venda:");
 		getContentPane().add(lblPreco, "cell 0 4");
 
 		//condição
@@ -332,7 +333,6 @@ public class CadastroMedicamento extends JInternalFrame {
 		txtPrecoCusto.setText(format.format(remedio.getPrecoCusto()) + "");
 		txtComposicao.setText(remedio.getComposicao());
 
-		// Usando calculo Lambda do stackoverflow (Kalleo)
 		Optional<Laboratorio> laboratorioSelecionado = listaLaboratorios.stream()
 				.filter(lab -> lab.getIdLaboratorio() == remedio.getLaboratorio().getIdLaboratorio()).findFirst();
 

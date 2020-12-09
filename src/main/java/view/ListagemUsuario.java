@@ -51,7 +51,7 @@ public class ListagemUsuario extends JInternalFrame {
 		setBorder(new LineBorder(Color.LIGHT_GRAY, 3));
 		setClosable(true);
 		getContentPane().setBackground(Color.WHITE);
-		setTitle("Listagem usuário");
+		setTitle("Listagem usuÃ¡rio");
 		setBounds(100, 100, 800, 619);
 		getContentPane().setLayout(new MigLayout("", "[][grow]", "[][][][grow]"));
 
@@ -103,7 +103,7 @@ public class ListagemUsuario extends JInternalFrame {
 
 		for (Usuario usuario : usuariosConsultados) {
 			String[] novaLinha = new String[] { usuario.getId() + "", usuario.getNome(),
-					usuario.getDt_cadastro().toString(), usuario.getNivel().getDescricao() };
+					sdf.format(usuario.getDt_cadastro()), usuario.getNivel().getDescricao() };
 			modelo.addRow(novaLinha);
 		}
 		;
