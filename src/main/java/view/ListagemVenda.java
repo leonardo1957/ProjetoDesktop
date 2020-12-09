@@ -336,6 +336,7 @@ public class ListagemVenda extends JInternalFrame {
 
 		for (Venda venda : vendas) {
 
+			
 			DecimalFormat format = new DecimalFormat("0.00");
 			String[] novaLinha = new String[] { venda.getIdVenda() + "", "R$" + format.format(venda.getValor()), "" + sdf.format(venda.getDataVenda()) };
 		modelo.addRow(novaLinha);
