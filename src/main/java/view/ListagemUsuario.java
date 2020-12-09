@@ -106,8 +106,6 @@ public class ListagemUsuario extends JInternalFrame {
 					sdf.format(usuario.getDt_cadastro()), usuario.getNivel().getDescricao() };
 			modelo.addRow(novaLinha);
 			
-			 
-			
 			
 			
 		}
