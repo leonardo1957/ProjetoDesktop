@@ -9,6 +9,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.text.DecimalFormat;
+import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Optional;
 
@@ -23,6 +24,7 @@ import javax.swing.JTextField;
 import javax.swing.border.LineBorder;
 import javax.swing.event.InternalFrameAdapter;
 import javax.swing.plaf.basic.BasicInternalFrameUI.InternalFrameLayout;
+import javax.swing.text.MaskFormatter;
 
 import controller.ControllerProduto;
 import model.vo.Categoria;
@@ -62,6 +64,14 @@ public class CadastroProduto extends JInternalFrame {
 	 * Create the frame.
 	 */
 	public CadastroProduto(Produto produtoSelecionado) {
+		
+		MaskFormatter mascaraLetraMaiuscula;
+		try {
+			mascaraLetraMaiuscula = new MaskFormatter("U");
+		} catch (ParseException e	 ) {
+			
+		}
+		
 		setBorder(new LineBorder(new Color(192, 192, 192), 3));
 		setFrameIcon(new ImageIcon(CadastroProduto.class.getResource("/icons/product.png")));
 		getContentPane().setBackground(Color.WHITE);

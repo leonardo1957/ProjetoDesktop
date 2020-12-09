@@ -87,7 +87,7 @@ public class Menu extends JFrame {
 		this.getContentPane().setLayout(new MigLayout("", "[grow][]", "[grow][]"));
 
 		ImageIcon icon = new ImageIcon(this.getClass().getResource("/icons/icon2.jpg"));
-		Image img = icon.getImage();
+		final Image img = icon.getImage();
 
 		desktopPane = new JDesktopPane() {
 			/**

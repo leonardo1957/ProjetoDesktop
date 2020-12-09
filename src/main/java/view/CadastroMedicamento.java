@@ -9,6 +9,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.text.DecimalFormat;
+import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Optional;
 import java.util.Scanner;
@@ -23,6 +24,7 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.border.LineBorder;
+import javax.swing.text.MaskFormatter;
 
 import controller.ControllerRemedio;
 import model.vo.FormaUso;
@@ -82,7 +84,13 @@ public class CadastroMedicamento extends JInternalFrame {
 		setBounds(100, 100, 694, 321);
 		getContentPane().setLayout(new MigLayout("", "[100px][][grow]", "[][][][][][][][][][][10px:n][][10px:n][][][grow][]"));
 		
-
+		MaskFormatter mascaraLetraMaiuscula;
+		try {
+			mascaraLetraMaiuscula = new MaskFormatter("U");
+		} catch (ParseException e	 ) {
+			
+		}
+		
 		JLabel lblNome = new JLabel("Nome:");
 		getContentPane().add(lblNome, "cell 0 1");
 

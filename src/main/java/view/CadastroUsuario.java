@@ -5,6 +5,7 @@ import java.awt.Dimension;
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.text.ParseException;
 import java.util.ArrayList;
 
 import javax.swing.DefaultComboBoxModel;
@@ -17,6 +18,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import javax.swing.border.LineBorder;
+import javax.swing.text.MaskFormatter;
 
 import controller.ControllerUsuario;
 import model.vo.Nivel;
@@ -50,6 +52,14 @@ public class CadastroUsuario extends JInternalFrame {
 	 * Create the frame.
 	 */
 	public CadastroUsuario() {
+		
+		MaskFormatter mascaraLetraMaiuscula;
+		try {
+			mascaraLetraMaiuscula = new MaskFormatter("U");
+		} catch (ParseException e	 ) {
+			
+		}
+		
 		setBorder(new LineBorder(Color.LIGHT_GRAY, 3));
 		setClosable(true);
 		getContentPane().setBackground(Color.WHITE);

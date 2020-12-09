@@ -11,6 +11,7 @@ import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.text.DecimalFormat;
+import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,6 +28,7 @@ import javax.swing.SpinnerNumberModel;
 import javax.swing.SwingConstants;
 import javax.swing.border.LineBorder;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.text.MaskFormatter;
 
 import controller.ControllerVenda;
 import model.seletor.MercadoriaSeletor;
@@ -98,6 +100,12 @@ public class TelaVenda extends JInternalFrame {
 	 * @param usuario
 	 */
 	public TelaVenda(Usuario usuario) {
+		MaskFormatter mascaraLetraMaiuscula;
+		try {
+			mascaraLetraMaiuscula = new MaskFormatter("U");
+		} catch (ParseException e	 ) {
+			
+		}
 		getContentPane().setBackground(Color.WHITE);
 		setResizable(true);
 		setFrameIcon(new ImageIcon(TelaVenda.class.getResource("/icons/cart (2).png")));
