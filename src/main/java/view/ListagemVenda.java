@@ -189,7 +189,7 @@ public class ListagemVenda extends JInternalFrame {
 
 					ControllerVenda vendaController = new ControllerVenda();
 					vendaController.gerarRelatorio(vendasConsultadas, caminhoEscolhido,
-							ControllerProduto.TIPO_RELATORIO_XLS);
+							ControllerProduto.TIPO_RELATORIO_XLS); 
 				}
 			}
 		});
@@ -332,13 +332,14 @@ public class ListagemVenda extends JInternalFrame {
 				new String[] { "Codigo", "Valor", "Data da venda" }));
 
 		DefaultTableModel modelo = (DefaultTableModel) tblVendas.getModel();
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
 		for (Venda venda : vendas) {
 
+			
 			DecimalFormat format = new DecimalFormat("0.00");
-			String[] novaLinha = new String[] { venda.getIdVenda() + "", "R$" + format.format(venda.getValor()),
-					String.valueOf(venda.getDataVenda()) };
-			modelo.addRow(novaLinha);
+			String[] novaLinha = new String[] { venda.getIdVenda() + "", "R$" + format.format(venda.getValor()), "" + sdf.format(venda.getDataVenda()) };
+		modelo.addRow(novaLinha);
 		}
 	}
 }
