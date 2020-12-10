@@ -81,7 +81,7 @@ public class CadastroMedicamento extends JInternalFrame {
 		getContentPane().setBackground(Color.WHITE);
 		setTitle("Cadastro de medicamentos");
 		setClosable(true);
-		setBounds(100, 100, 694, 321);
+		setBounds(100, 100, 705, 327);
 		getContentPane().setLayout(new MigLayout("", "[100px][][grow]", "[][][][][][][][][][][10px:n][][10px:n][][][grow][]"));
 		
 		MaskFormatter mascaraLetraMaiuscula;
