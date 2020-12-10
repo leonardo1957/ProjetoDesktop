@@ -188,7 +188,6 @@ public class GeradorDePlanilha {
 				novaLinha.createCell(2).setCellValue(data.format(venda.getDataVenda()));
 				count++;
 			}
-
 			
 			outputStream = new FileOutputStream(caminho);
 			planilha.write(outputStream);
