@@ -5,6 +5,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.text.DateFormat;
+import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.List;
 
@@ -170,7 +171,7 @@ public class GeradorDePlanilha {
 		OutputStream outputStream = null;
 		try {
 			planilha = new XSSFWorkbook();
-
+			DecimalFormat valorFormat = new DecimalFormat("0.00");
 			DateFormat data = new SimpleDateFormat("dd/MM/yyyy");
 
 			XSSFSheet sheet = planilha.createSheet("Venda");
@@ -183,7 +184,7 @@ public class GeradorDePlanilha {
 			for (Venda venda : vendas) {
 				XSSFRow novaLinha = sheet.createRow(count);
 				novaLinha.createCell(0).setCellValue(venda.getIdVenda());
-				novaLinha.createCell(1).setCellValue("R$" + venda.getValor());
+				novaLinha.createCell(1).setCellValue("R$" + "" + valorFormat.format(venda.getValor()));
 				novaLinha.createCell(2).setCellValue(data.format(venda.getDataVenda()));
 				count++;
 			}
